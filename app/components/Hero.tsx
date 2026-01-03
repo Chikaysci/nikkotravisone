@@ -1,20 +1,14 @@
 "use client";
 
 import React from "react";
-import useSound from "use-sound";
 
 function Hero({
   setCurrentOverflow,
 }: {
   setCurrentOverflow: React.Dispatch<React.SetStateAction<string>>;
 }) {
-  const [play] = useSound("/audio/backsound.mp3", {
-    volume: 0.25,
-  });
-
   const handleNavClick = (sectionId: string) => {
     setCurrentOverflow("auto");
-    play();
     setTimeout(() => {
       const element = document.getElementById(sectionId);
       if (element) {
