@@ -14,7 +14,7 @@ function Gallery() {
     { src: "/images/gallery/grid-3.jpg", alt: "Gallery 3" },
     { src: "/images/gallery/grid-4.jpg", alt: "Gallery 4" },
     { src: "/images/gallery/grid-5.jpg", alt: "Gallery 5" },
-    { src: "/images/gallery/grid-6.jpg", alt: "Gallery 6" },
+    //{ src: "/images/gallery/grid-6.jpg", alt: "Gallery 6" },
   ];
 
   return (
