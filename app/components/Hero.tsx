@@ -1,9 +1,7 @@
 "use client";
 
 import React from "react";
-import { RxEnvelopeOpen } from "react-icons/rx";
 import useSound from "use-sound";
-import { RevealWrapper } from "next-reveal";
 
 function Hero({
   setCurrentOverflow,
@@ -14,59 +12,72 @@ function Hero({
     volume: 0.25,
   });
 
+  const handleNavClick = (sectionId: string) => {
+    setCurrentOverflow("auto");
+    play();
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
+
+  const navItems = [
+    { label: "Ceremony", id: "ceremony" },
+    { label: "Reception", id: "reception" },
+    { label: "Theme", id: "theme" },
+    { label: "Gallery", id: "gallery" },
+    { label: "RSVP", id: "rsvp" },
+  ];
+
   return (
-    <section id="hero">
-      <div className="min-h-screen bg-black flex items-center justify-center p-4">
-        {/* Save the Date Card */}
-        <div className="bg-[#4a4a4a] border border-[#8a8a7a]/40 p-6 sm:p-8 max-w-[360px] w-full">
-          <div className="border border-[#8a8a7a]/30 p-6 sm:p-8">
-            <div className="flex">
-              {/* Left side - Date numbers */}
-              <div className="flex flex-col justify-center pr-4 sm:pr-6">
-                <span className="text-[#3a3a3a] text-7xl sm:text-8xl font-bold leading-[0.85]">10</span>
-                <span className="text-[#3a3a3a] text-7xl sm:text-8xl font-bold leading-[0.85]">02</span>
-                <span className="text-[#3a3a3a] text-7xl sm:text-8xl font-bold leading-[0.85]">26</span>
-              </div>
+    <section id="hero" className="relative min-h-screen w-screen">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 w-screen h-screen bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/hero/background.jpg')" }}
+      >
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/30"></div>
+      </div>
 
-              {/* Right side - Text content */}
-              <div className="flex flex-col justify-center text-white pl-2 sm:pl-4">
-                <div className="mb-4">
-                  <p className="text-lg sm:text-xl tracking-[0.3em] font-light">SAVE</p>
-                  <p className="font-script text-xl sm:text-2xl -mt-1">the</p>
-                  <p className="text-lg sm:text-xl tracking-[0.3em] font-light -mt-1">DATE</p>
-                </div>
-
-                <p className="font-script text-sm sm:text-base mb-3">for the wedding of</p>
-
-                <div className="mb-4">
-                  <p className="text-lg sm:text-xl tracking-[0.2em] font-light">NIKKO</p>
-                  <p className="font-script text-xl sm:text-2xl -mt-1">and</p>
-                  <p className="text-lg sm:text-xl tracking-[0.2em] font-light -mt-1">TRAVIS</p>
-                </div>
-
-                <div className="mb-4">
-                  <p className="text-[10px] sm:text-xs tracking-[0.2em] font-light">OCTOBER 02, 2026</p>
-                  <p className="text-[10px] sm:text-xs tracking-[0.2em] font-light">HONOLULU, HAWAII</p>
-                </div>
-
-                <p className="font-script text-sm sm:text-base">invitation to follow</p>
-              </div>
-            </div>
-
-            {/* Open invitation button */}
-            <RevealWrapper duration={4000} origin="bottom">
-              <a
-                href="#countdown"
-                onClick={() => {
-                  setCurrentOverflow("auto");
-                  play();
-                }}
-                className="font-bold text-xs bg-[#ffffff20] border border-[#8a8a7a]/50 rounded flex items-center justify-center gap-2 px-4 py-2 mt-6 hover:scale-95 ease-linear duration-200 text-white/90 mx-auto w-fit"
+      {/* Content */}
+      <div className="relative z-10 min-h-screen w-screen flex">
+        {/* Left Side Navigation */}
+        <div className="flex flex-col justify-center pl-6 sm:pl-10 md:pl-16 py-8">
+          <nav className="flex flex-col gap-4">
+            {navItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => handleNavClick(item.id)}
+                className="group relative text-left px-6 py-3 text-white font-light tracking-[0.25em] text-sm sm:text-base uppercase transition-all duration-300 hover:tracking-[0.35em]"
               >
-                <RxEnvelopeOpen />
-                <span>Open Invitation</span>
-              </a>
-            </RevealWrapper>
+                {/* Button background */}
+                <span className="absolute inset-0 bg-white/10 backdrop-blur-sm border border-white/20 rounded transition-all duration-300 group-hover:bg-white/20 group-hover:border-white/40"></span>
+
+                {/* Button text */}
+                <span className="relative z-10">{item.label}</span>
+
+                {/* Hover accent line */}
+                <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-2"></span>
+              </button>
+            ))}
+          </nav>
+        </div>
+
+        {/* Center/Right Content - Names */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="text-center text-white">
+            <p className="text-xs sm:text-sm tracking-[0.4em] font-light mb-4 opacity-80">
+              THE WEDDING OF
+            </p>
+            <h1 className="font-script text-4xl sm:text-5xl md:text-6xl mb-2">
+              Nikko & Travis
+            </h1>
+            <p className="text-xs sm:text-sm tracking-[0.3em] font-light opacity-80">
+              OCTOBER 02, 2026
+            </p>
           </div>
         </div>
       </div>

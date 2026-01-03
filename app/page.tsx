@@ -4,10 +4,13 @@ import { useEffect, useState } from "react";
 import Countdown from "./components/Countdown";
 import ArRum from "./components/ArRum";
 import Hero from "./components/Hero";
+import Ceremony from "./components/Ceremony";
 import Profile from "./components/Profile";
 import WeddingEvents from "./components/WeddingEvents";
-import Reservation from "./components/Reservation";
+import Reception from "./components/Reception";
+import Theme from "./components/Theme";
 import Gallery from "./components/Gallery";
+import RSVP from "./components/RSVP";
 import Footer from "./components/Footer";
 import { RevealWrapper } from "next-reveal";
 
@@ -20,19 +23,24 @@ export default function Home() {
   }, [currentOverflow]);
 
   return (
-    <main className="max-w-[28.125rem] mx-auto">
+    <main className="w-screen">
       <RevealWrapper duration={1500}>
         <Hero setCurrentOverflow={setCurrentOverflow} />
       </RevealWrapper>
-     {/*
-     <Countdown />
-     -->
-      <ArRum />
-      <Profile />
-      <WeddingEvents />
-      <Reservation />
+      {/* Content sections */}
+      <Ceremony />
+      <Reception />
+      <Theme />
       <Gallery />
-      <Footer />
+      <RSVP />
+      {/*
+      <div className="max-w-[28.125rem] mx-auto">
+        <Countdown />
+        <ArRum />
+        <Profile />
+        <WeddingEvents />
+        <Footer />
+      </div>
       */}
     </main>
   );
