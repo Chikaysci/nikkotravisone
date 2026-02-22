@@ -22,6 +22,7 @@ function Hero({
     { label: "Reception", id: "reception" },
     { label: "Theme", id: "theme" },
     { label: "Gallery", id: "gallery" },
+    { label: "Travel", id: "travel" },
     { label: "RSVP", id: "rsvp" },
   ];
 
@@ -30,7 +31,7 @@ function Hero({
       {/* Background Image */}
       <div
         className="absolute inset-0 w-screen h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero/background.jpg')" }}
+        style={{ backgroundImage: "url('/images/gallery/finalwebsitebackground.jpeg')" }}
       >
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/30"></div>
@@ -45,7 +46,7 @@ function Hero({
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className="group relative text-left px-6 py-3 text-white font-light tracking-[0.25em] text-sm sm:text-base uppercase transition-all duration-300 hover:tracking-[0.35em]"
+                className="group relative text-left px-6 py-3 text-[#d4af37] font-light tracking-[0.25em] text-sm sm:text-base uppercase transition-all duration-300 hover:tracking-[0.35em]"
               >
                 {/* Button background */}
                 <span className="absolute inset-0 bg-white/10 backdrop-blur-sm border border-white/20 rounded transition-all duration-300 group-hover:bg-white/20 group-hover:border-white/40"></span>
@@ -61,15 +62,15 @@ function Hero({
         </div>
 
         {/* Center/Right Content - Names */}
-        <div className="flex-1 flex items-center justify-center">
-          <div className="text-center text-white">
-            <p className="text-xs sm:text-sm tracking-[0.4em] font-light mb-4 opacity-80">
+        <div className="flex-1 flex items-end justify-center pb-28">
+          <div className="text-center text-[#d4af37] bg-black/40 backdrop-blur-sm px-10 py-6 rounded-xl">
+            <p className="text-xs sm:text-sm tracking-[0.4em] font-bold mb-4 opacity-80">
               THE WEDDING OF
             </p>
-            <h1 className="font-script text-4xl sm:text-5xl md:text-6xl mb-2">
+            <h1 className="font-script text-4xl sm:text-5xl md:text-6xl mb-2 font-bold">
               Nikko & Travis
             </h1>
-            <p className="text-xs sm:text-sm tracking-[0.3em] font-light opacity-80">
+            <p className="text-xs sm:text-sm tracking-[0.3em] font-bold opacity-80">
               OCTOBER 02, 2026
             </p>
           </div>

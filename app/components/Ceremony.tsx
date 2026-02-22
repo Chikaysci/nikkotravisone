@@ -16,10 +16,10 @@ function Ceremony() {
           {/* Section Header */}
           <RevealWrapper duration={1500} origin="top">
             <div className="text-center mb-16">
-              <p className="text-white/60 tracking-[0.4em] text-xs uppercase mb-4">
+              <p className="text-[#d4af37]/60 tracking-[0.4em] text-xs uppercase mb-4">
                 Join Us For
               </p>
-              <h1 className="font-script text-5xl md:text-6xl text-white mb-4">
+              <h1 className="font-script text-5xl md:text-6xl text-[#d4af37] mb-4">
                 The Ceremony
               </h1>
               <div className="w-24 h-[1px] bg-white/30 mx-auto"></div>
@@ -33,14 +33,17 @@ function Ceremony() {
               <div className="h-64 md:h-80 bg-gradient-to-br from-[#3a3a3a] to-[#2a2a2a] relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
-                    <p className="text-white/40 tracking-[0.3em] text-sm uppercase">
+                    <p className="text-[#d4af37]/40 tracking-[0.3em] text-sm uppercase">
                       Friday
                     </p>
-                    <p className="text-white text-7xl md:text-8xl font-light">
+                    <p className="text-[#d4af37] text-7xl md:text-8xl font-light">
                       02
                     </p>
-                    <p className="text-white/60 tracking-[0.2em] text-lg">
+                    <p className="text-[#d4af37]/60 tracking-[0.2em] text-lg">
                       OCTOBER 2026
+                    </p>
+                    <p className="text-[#d4af37]/50 tracking-[0.15em] text-sm mt-2">
+                      10/02/2026
                     </p>
                   </div>
                 </div>
@@ -55,14 +58,14 @@ function Ceremony() {
                   {/* Time */}
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                      <AiFillClockCircle className="text-white/80 text-xl" />
+                      <AiFillClockCircle className="text-[#d4af37]/80 text-xl" />
                     </div>
                     <div>
-                      <h3 className="text-white font-light tracking-wider mb-2">
+                      <h3 className="text-[#d4af37] font-light tracking-wider mb-2">
                         TIME
                       </h3>
-                      <p className="text-white/70 text-lg">4:00 PM</p>
-                      <p className="text-white/50 text-sm mt-1">
+                      <p className="text-[#d4af37]/70 text-lg">2:30 PM</p>
+                      <p className="text-[#d4af37]/50 text-sm mt-1">
                         Please arrive 30 minutes early
                       </p>
                     </div>
@@ -71,41 +74,29 @@ function Ceremony() {
                   {/* Location */}
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                      <HiLocationMarker className="text-white/80 text-xl" />
+                      <HiLocationMarker className="text-[#d4af37]/80 text-xl" />
                     </div>
                     <div>
-                      <h3 className="text-white font-light tracking-wider mb-2">
+                      <h3 className="text-[#d4af37] font-light tracking-wider mb-2">
                         VENUE
                       </h3>
-                      <p className="text-white/70 text-lg">
-                        Haiku Gardens
+                      <p className="text-[#d4af37]/70 text-lg">
+                        Nalo Garden
                       </p>
-                      <p className="text-white/50 text-sm mt-1">
-                        46-336 Haiku Rd, Kaneohe, HI 96744
+                      <p className="text-[#d4af37]/50 text-sm mt-1">
+                        Waimanalo, Oahu, HI
                       </p>
                     </div>
-                  </div>
-                </div>
-
-                {/* Dress Code */}
-                <div className="mt-10 pt-8 border-t border-white/10">
-                  <div className="text-center">
-                    <p className="text-white/50 tracking-[0.2em] text-xs uppercase mb-2">
-                      Dress Code
-                    </p>
-                    <p className="text-white text-xl font-light tracking-wide">
-                      Formal Attire
-                    </p>
                   </div>
                 </div>
 
                 {/* Map Button */}
                 <div className="mt-8 text-center">
                   <a
-                    href="https://www.google.com/maps/place/Haiku+Gardens/@21.4184,-157.8394,17z"
+                    href="https://www.google.com/maps/search/Nalo+Garden+Waimanalo+Oahu+HI"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-8 py-3 border border-white/30 rounded-full text-white/80 text-sm tracking-wider uppercase hover:bg-white/10 transition-all duration-300"
+                    className="inline-flex items-center gap-2 px-8 py-3 border border-white/30 rounded-full text-[#d4af37]/80 text-sm tracking-wider uppercase hover:bg-white/10 transition-all duration-300"
                   >
                     <HiLocationMarker />
                     View on Google Maps
@@ -118,7 +109,7 @@ function Ceremony() {
           {/* Additional Note */}
           <RevealWrapper duration={1500} origin="bottom">
             <div className="mt-12 text-center">
-              <p className="text-white/50 italic text-sm max-w-md mx-auto leading-relaxed">
+              <p className="text-[#d4af37]/50 italic text-sm max-w-md mx-auto leading-relaxed">
                 "Two souls, one heart. We invite you to witness the beginning of our forever."
               </p>
             </div>

@@ -45,15 +45,15 @@ function RSVP() {
           {/* Section Header */}
           <RevealWrapper duration={1500} origin="top">
             <div className="text-center mb-12">
-              <p className="text-white/60 tracking-[0.4em] text-xs uppercase mb-4">
+              <p className="text-[#d4af37]/60 tracking-[0.4em] text-xs uppercase mb-4">
                 We Hope You Can Make It
               </p>
-              <h1 className="font-script text-5xl md:text-6xl text-white mb-4">
+              <h1 className="font-script text-5xl md:text-6xl text-[#d4af37] mb-4">
                 RSVP
               </h1>
               <div className="w-24 h-[1px] bg-white/30 mx-auto mb-6"></div>
-              <p className="text-white/50 text-sm max-w-md mx-auto">
-                Please respond by September 1st, 2026
+              <p className="text-[#d4af37]/50 text-sm max-w-md mx-auto">
+                Please respond by July 1st, 2026
               </p>
             </div>
           </RevealWrapper>
@@ -65,10 +65,10 @@ function RSVP() {
                 <div className="w-20 h-20 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-6">
                   <FaCheck className="text-green-400 text-3xl" />
                 </div>
-                <h2 className="text-white text-2xl font-light mb-4">
+                <h2 className="text-[#d4af37] text-2xl font-light mb-4">
                   Thank You!
                 </h2>
-                <p className="text-white/70 leading-relaxed">
+                <p className="text-[#d4af37]/70 leading-relaxed">
                   Your response has been received. We can't wait to celebrate with you!
                 </p>
                 <div className="mt-8 flex justify-center">
@@ -82,7 +82,7 @@ function RSVP() {
               >
                 {/* Name */}
                 <div className="mb-6">
-                  <label className="block text-white/60 text-xs tracking-wider uppercase mb-2">
+                  <label className="block text-[#d4af37]/60 text-xs tracking-wider uppercase mb-2">
                     Full Name *
                   </label>
                   <input
@@ -91,14 +91,14 @@ function RSVP() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-white/40 transition-colors"
+                    className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-[#d4af37] placeholder-[#d4af37]/30 focus:outline-none focus:border-white/40 transition-colors"
                     placeholder="Enter your name"
                   />
                 </div>
 
                 {/* Email */}
                 <div className="mb-6">
-                  <label className="block text-white/60 text-xs tracking-wider uppercase mb-2">
+                  <label className="block text-[#d4af37]/60 text-xs tracking-wider uppercase mb-2">
                     Email Address *
                   </label>
                   <input
@@ -107,22 +107,22 @@ function RSVP() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-white/40 transition-colors"
+                    className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-[#d4af37] placeholder-[#d4af37]/30 focus:outline-none focus:border-white/40 transition-colors"
                     placeholder="Enter your email"
                   />
                 </div>
 
                 {/* Attendance */}
                 <div className="mb-6">
-                  <label className="block text-white/60 text-xs tracking-wider uppercase mb-2">
+                  <label className="block text-[#d4af37]/60 text-xs tracking-wider uppercase mb-2">
                     Will You Attend? *
                   </label>
                   <div className="grid grid-cols-2 gap-4">
                     <label
                       className={`flex items-center justify-center gap-2 px-4 py-3 border rounded-lg cursor-pointer transition-all ${
                         formData.attendance === "yes"
-                          ? "bg-white/20 border-white/40 text-white"
-                          : "bg-white/5 border-white/20 text-white/60 hover:border-white/30"
+                          ? "bg-white/20 border-white/40 text-[#d4af37]"
+                          : "bg-white/5 border-white/20 text-[#d4af37]/60 hover:border-white/30"
                       }`}
                     >
                       <input
@@ -139,8 +139,8 @@ function RSVP() {
                     <label
                       className={`flex items-center justify-center gap-2 px-4 py-3 border rounded-lg cursor-pointer transition-all ${
                         formData.attendance === "no"
-                          ? "bg-white/20 border-white/40 text-white"
-                          : "bg-white/5 border-white/20 text-white/60 hover:border-white/30"
+                          ? "bg-white/20 border-white/40 text-[#d4af37]"
+                          : "bg-white/5 border-white/20 text-[#d4af37]/60 hover:border-white/30"
                       }`}
                     >
                       <input
@@ -156,46 +156,54 @@ function RSVP() {
                   </div>
                 </div>
 
-                {/* Number of Guests - Only show if attending */}
-                {formData.attendance === "yes" && (
-                  <>
-                    <div className="mb-6">
-                      <label className="block text-white/60 text-xs tracking-wider uppercase mb-2">
-                        Number of Guests
-                      </label>
-                      <select
-                        name="guests"
-                        value={formData.guests}
-                        onChange={handleChange}
-                        className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white/40 transition-colors"
-                      >
-                        <option value="1" className="bg-[#2d2d2d]">1 Guest</option>
-                        <option value="2" className="bg-[#2d2d2d]">2 Guests</option>
-                        <option value="3" className="bg-[#2d2d2d]">3 Guests</option>
-                        <option value="4" className="bg-[#2d2d2d]">4 Guests</option>
-                      </select>
-                    </div>
+                {/* Number of People Attending - always visible */}
+                <div className="mb-6">
+                  <label className="block text-[#d4af37]/60 text-xs tracking-wider uppercase mb-2">
+                    # of People Attending
+                  </label>
+                  <select
+                    name="guests"
+                    value={formData.guests}
+                    onChange={handleChange}
+                    className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-[#d4af37] focus:outline-none focus:border-white/40 transition-colors"
+                  >
+                    <option value="1" className="bg-[#2d2d2d]">1 Person</option>
+                    <option value="2" className="bg-[#2d2d2d]">2 People</option>
+                    <option value="3" className="bg-[#2d2d2d]">3 People</option>
+                    <option value="4" className="bg-[#2d2d2d]">4 People</option>
+                  </select>
+                </div>
 
-                    {/* Dietary Restrictions */}
-                    <div className="mb-6">
-                      <label className="block text-white/60 text-xs tracking-wider uppercase mb-2">
-                        Dietary Restrictions
-                      </label>
-                      <input
-                        type="text"
-                        name="dietaryRestrictions"
-                        value={formData.dietaryRestrictions}
-                        onChange={handleChange}
-                        className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-white/40 transition-colors"
-                        placeholder="Vegetarian, vegan, allergies, etc."
-                      />
-                    </div>
-                  </>
+                {/* Dietary Restrictions - only if attending */}
+                {formData.attendance === "yes" && (
+                  <div className="mb-6">
+                    <label className="block text-[#d4af37]/60 text-xs tracking-wider uppercase mb-2">
+                      Dietary Restrictions
+                    </label>
+                    <input
+                      type="text"
+                      name="dietaryRestrictions"
+                      value={formData.dietaryRestrictions}
+                      onChange={handleChange}
+                      className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-[#d4af37] placeholder-[#d4af37]/30 focus:outline-none focus:border-white/40 transition-colors"
+                      placeholder="Vegetarian, vegan, allergies, etc."
+                    />
+                  </div>
                 )}
 
-                {/* Message */}
+                {/* Message from the Couple - shown when declining */}
+                {formData.attendance === "no" && (
+                  <div className="mb-6 bg-[#d4af37]/5 border border-[#d4af37]/20 rounded-xl p-6">
+                    <p className="text-[#d4af37]/60 text-xs tracking-wider uppercase mb-3">Message from the Couple</p>
+                    <p className="text-[#d4af37]/70 text-sm font-light leading-relaxed italic">
+                      "To those who can't celebrate with us in person, we'll miss you dearly and appreciate your love and support. If you would still like to send a gift, we've created a registry to make it simple and convenient."
+                    </p>
+                  </div>
+                )}
+
+                {/* Message for the Couple */}
                 <div className="mb-8">
-                  <label className="block text-white/60 text-xs tracking-wider uppercase mb-2">
+                  <label className="block text-[#d4af37]/60 text-xs tracking-wider uppercase mb-2">
                     Message for the Couple
                   </label>
                   <textarea
@@ -203,7 +211,7 @@ function RSVP() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-white/40 transition-colors resize-none"
+                    className="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-[#d4af37] placeholder-[#d4af37]/30 focus:outline-none focus:border-white/40 transition-colors resize-none"
                     placeholder="Share your wishes or any questions..."
                   />
                 </div>
@@ -212,7 +220,7 @@ function RSVP() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 rounded-full text-white tracking-wider uppercase hover:bg-white/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 rounded-full text-[#d4af37] tracking-wider uppercase hover:bg-white/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <span>Sending...</span>
@@ -230,14 +238,14 @@ function RSVP() {
           {/* Contact Info */}
           <RevealWrapper duration={1500} origin="bottom">
             <div className="mt-12 text-center">
-              <p className="text-white/40 text-xs tracking-wider uppercase mb-2">
+              <p className="text-[#d4af37]/40 text-xs tracking-wider uppercase mb-2">
                 Questions?
               </p>
-              <p className="text-white/60 text-sm">
+              <p className="text-[#d4af37]/60 text-sm">
                 Contact us at{" "}
                 <a
                   href="mailto:nikkoandtravis@wedding.com"
-                  className="text-white/80 underline underline-offset-2 hover:text-white transition-colors"
+                  className="text-[#d4af37]/80 underline underline-offset-2 hover:text-[#d4af37] transition-colors"
                 >
                   nikkoandtravis@wedding.com
                 </a>

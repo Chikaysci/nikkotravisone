@@ -18,10 +18,10 @@ function Reception() {
           {/* Section Header */}
           <RevealWrapper duration={1500} origin="top">
             <div className="text-center mb-16">
-              <p className="text-white/60 tracking-[0.4em] text-xs uppercase mb-4">
+              <p className="text-[#d4af37]/60 tracking-[0.4em] text-xs uppercase mb-4">
                 Celebrate With Us
               </p>
-              <h1 className="font-script text-5xl md:text-6xl text-white mb-4">
+              <h1 className="font-script text-5xl md:text-6xl text-[#d4af37] mb-4">
                 The Reception
               </h1>
               <div className="w-24 h-[1px] bg-white/30 mx-auto"></div>
@@ -35,12 +35,15 @@ function Reception() {
               <div className="h-64 md:h-80 bg-gradient-to-br from-[#4a4a4a] to-[#3a3a3a] relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
-                    <GiPartyPopper className="text-white/20 text-6xl mx-auto mb-4" />
-                    <p className="text-white/80 tracking-[0.3em] text-lg uppercase">
+                    <GiPartyPopper className="text-[#d4af37]/20 text-6xl mx-auto mb-4" />
+                    <p className="text-[#d4af37]/80 tracking-[0.3em] text-lg uppercase">
                       Dinner & Dancing
                     </p>
-                    <p className="text-white/50 tracking-[0.2em] text-sm mt-2">
+                    <p className="text-[#d4af37]/50 tracking-[0.2em] text-sm mt-2">
                       Following the Ceremony
+                    </p>
+                    <p className="text-[#d4af37]/70 text-sm mt-4 max-w-sm mx-auto font-light italic leading-relaxed">
+                      "Step behind the velvet curtain and join us for a late-night speakeasy wedding reception -- killer cocktails, good music and unforgettable party vibes"
                     </p>
                   </div>
                 </div>
@@ -55,33 +58,30 @@ function Reception() {
                   {/* Time */}
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                      <AiFillClockCircle className="text-white/80 text-xl" />
+                      <AiFillClockCircle className="text-[#d4af37]/80 text-xl" />
                     </div>
                     <div>
-                      <h3 className="text-white font-light tracking-wider mb-2">
+                      <h3 className="text-[#d4af37] font-light tracking-wider mb-2">
                         TIME
                       </h3>
-                      <p className="text-white/70 text-lg">6:00 PM - 11:00 PM</p>
-                      <p className="text-white/50 text-sm mt-1">
-                        Cocktail hour begins at 6:00 PM
-                      </p>
+                      <p className="text-[#d4af37]/70 text-lg">5:00 PM - 9:00 PM</p>
                     </div>
                   </div>
 
                   {/* Location */}
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                      <HiLocationMarker className="text-white/80 text-xl" />
+                      <HiLocationMarker className="text-[#d4af37]/80 text-xl" />
                     </div>
                     <div>
-                      <h3 className="text-white font-light tracking-wider mb-2">
+                      <h3 className="text-[#d4af37] font-light tracking-wider mb-2">
                         VENUE
                       </h3>
-                      <p className="text-white/70 text-lg">
-                        The Modern Honolulu
+                      <p className="text-[#d4af37]/70 text-lg">
+                        Hi Brau Speakeasy - Aloha Beer Co
                       </p>
-                      <p className="text-white/50 text-sm mt-1">
-                        1775 Ala Moana Blvd, Honolulu, HI 96815
+                      <p className="text-[#d4af37]/50 text-sm mt-1">
+                        700 Queen St, Honolulu, HI 96813
                       </p>
                     </div>
                   </div>
@@ -89,30 +89,39 @@ function Reception() {
 
                 {/* Event Schedule */}
                 <div className="mt-10 pt-8 border-t border-white/10">
-                  <h3 className="text-white/50 tracking-[0.2em] text-xs uppercase mb-6 text-center">
+                  <h3 className="text-[#d4af37]/50 tracking-[0.2em] text-xs uppercase mb-6 text-center">
                     Evening Schedule
                   </h3>
-                  <div className="grid grid-cols-3 gap-4 text-center">
-                    <div>
-                      <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-3">
-                        <span className="text-white/60 text-sm">1</span>
+                  <div className="flex flex-col gap-6">
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                        <span className="text-[#d4af37]/60 text-sm">🍸</span>
                       </div>
-                      <p className="text-white/70 text-sm font-light">Cocktails</p>
-                      <p className="text-white/40 text-xs mt-1">6:00 PM</p>
+                      <div>
+                        <p className="text-[#d4af37]/80 text-sm font-semibold">5PM — Cocktails</p>
+                      </div>
                     </div>
-                    <div>
-                      <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-3">
-                        <IoRestaurant className="text-white/60 text-sm" />
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                        <IoRestaurant className="text-[#d4af37]/60 text-sm" />
                       </div>
-                      <p className="text-white/70 text-sm font-light">Dinner</p>
-                      <p className="text-white/40 text-xs mt-1">7:00 PM</p>
+                      <div>
+                        <p className="text-[#d4af37]/80 text-sm font-semibold">6PM — Dinner</p>
+                        <p className="text-[#d4af37]/60 text-xs mt-1 font-light leading-relaxed">
+                          Buffet-style small plates — grab a few favorites, share the love, and keep the good times (and drinks) flowing
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-3">
-                        <GiPartyPopper className="text-white/60 text-sm" />
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                        <GiPartyPopper className="text-[#d4af37]/60 text-sm" />
                       </div>
-                      <p className="text-white/70 text-sm font-light">Dancing</p>
-                      <p className="text-white/40 text-xs mt-1">8:30 PM</p>
+                      <div>
+                        <p className="text-[#d4af37]/80 text-sm font-semibold">7PM–9PM — Dancing</p>
+                        <p className="text-[#d4af37]/60 text-xs mt-1 font-light leading-relaxed">
+                          The DJ knows our vibe — expect high energy EDM favorites cranked up, blended with old-school upbeat anthems
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -120,10 +129,10 @@ function Reception() {
                 {/* Map Button */}
                 <div className="mt-8 text-center">
                   <a
-                    href="https://www.google.com/maps/place/The+Modern+Honolulu/@21.2868,-157.8419,17z"
+                    href="https://maps.app.goo.gl/CUnkFtmeMg5ph1Ux8"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-8 py-3 border border-white/30 rounded-full text-white/80 text-sm tracking-wider uppercase hover:bg-white/10 transition-all duration-300"
+                    className="inline-flex items-center gap-2 px-8 py-3 border border-white/30 rounded-full text-[#d4af37]/80 text-sm tracking-wider uppercase hover:bg-white/10 transition-all duration-300"
                   >
                     <HiLocationMarker />
                     View on Google Maps
@@ -136,8 +145,8 @@ function Reception() {
           {/* Additional Note */}
           <RevealWrapper duration={1500} origin="bottom">
             <div className="mt-12 text-center">
-              <p className="text-white/50 italic text-sm max-w-md mx-auto leading-relaxed">
-                "Let's eat, drink, and dance the night away as we celebrate love and new beginnings."
+              <p className="text-[#d4af37]/50 italic text-sm max-w-md mx-auto leading-relaxed">
+                "Let the music play, the glasses clink, and the dance floor fill as we gather to celebrate love, commitment, and the joyful start of our married life"
               </p>
             </div>
           </RevealWrapper>

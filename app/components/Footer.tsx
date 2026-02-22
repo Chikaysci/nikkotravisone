@@ -7,7 +7,7 @@ function Footer() {
       <div className="h-screen bg-[url('/images/gallery/bg.jpg')] bg-cover bg-[47.5%] bg-no-repeat flex items-end">
         <div className="relative">
           <div className="bg-[linear-gradient(180deg,#FFFFFF00_0%,#424242_67%)] absolute inset-x-0 bottom-0 -top-24"></div>
-          <div className="flex flex-col items-center text-center gap-4 text-white p-6 z-10 relative">
+          <div className="flex flex-col items-center text-center gap-4 text-[#d4af37] p-6 z-10 relative">
             <RevealWrapper duration={1500} origin="top">
               <p className="text-[0.75rem] font-light leading-relaxed">
                 Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila

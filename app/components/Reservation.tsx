@@ -170,7 +170,7 @@ function Reservation() {
                   waktuKehadiran: "",
                 });
               }}
-              className="text-[0.75rem] bg-[#424242] flex items-center w-fit rounded text-white gap-2 py-2 px-4 font-bold hover:scale-90 ease-linear duration-[0.2s]"
+              className="text-[0.75rem] bg-[#424242] flex items-center w-fit rounded text-[#d4af37] gap-2 py-2 px-4 font-bold hover:scale-90 ease-linear duration-[0.2s]"
             >
               <RxEnvelopeOpen />
               <span>Kirim</span>

@@ -8,7 +8,7 @@ function WeddingEvents() {
       <div className="bg-[url('/images/weddingEvents/bg.jpeg')] bg-cover bg-center relative px-8 pt-8 pb-12 lg:px-10 lg:pt-10 lg:pb-14">
         <div className="bg-transparent bg-[linear-gradient(360deg,#EAEAEA_53%,#424242_100%)] opacity-90 absolute inset-0"></div>
         <div className="z-10 relative">
-          <h1 className="text-xl italic text-white text-center font-light">
+          <h1 className="text-xl italic text-[#d4af37] text-center font-light">
             Wedding Events
           </h1>
           <RevealWrapper duration={1500} origin="bottom">
@@ -20,7 +20,7 @@ function WeddingEvents() {
               />
               <div className="flex">
                 <div className="w-[20%] bg-[#424242] rounded-bl-[1.25rem] flex items-center">
-                  <p className="rotate-90 text-center text-white font-bold text-[1.75rem] -translate-x-5 lg:-translate-x-3.5 tracking-[5px]">
+                  <p className="rotate-90 text-center text-[#d4af37] font-bold text-[1.75rem] -translate-x-5 lg:-translate-x-3.5 tracking-[5px]">
                     AKAD
                   </p>
                 </div>
@@ -90,7 +90,7 @@ function WeddingEvents() {
                   </a>
                 </div>
                 <div className="w-[20%] bg-[#424242] rounded-br-[1.25rem] flex items-center">
-                  <p className="-rotate-90 text-center text-white font-bold text-[1.75rem] -translate-x-[3rem] lg:-translate-x-[2.35rem] tracking-[5px]">
+                  <p className="-rotate-90 text-center text-[#d4af37] font-bold text-[1.75rem] -translate-x-[3rem] lg:-translate-x-[2.35rem] tracking-[5px]">
                     RESEPSI
                   </p>
                 </div>

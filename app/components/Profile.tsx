@@ -48,7 +48,7 @@ function Profile() {
           </p>
           <a
             href="https://www.instagram.com/lemonnestt/"
-            className="text-sm text-white bg-[#424242] px-[0.4375rem] py-1 rounded-[0.625rem] flex items-center gap-1 hover:scale-90 ease-linear duration-[0.2s]"
+            className="text-sm text-[#d4af37] bg-[#424242] px-[0.4375rem] py-1 rounded-[0.625rem] flex items-center gap-1 hover:scale-90 ease-linear duration-[0.2s]"
           >
             <AiOutlineInstagram />
             <span>lemonnestt</span>
@@ -87,7 +87,7 @@ function Profile() {
           </p>
           <a
             href="https://www.instagram.com/akbar/"
-            className="text-sm text-white bg-[#424242] px-[0.4375rem] py-1 rounded-[0.625rem] flex items-center gap-1 hover:scale-90 ease-linear duration-[0.2s]"
+            className="text-sm text-[#d4af37] bg-[#424242] px-[0.4375rem] py-1 rounded-[0.625rem] flex items-center gap-1 hover:scale-90 ease-linear duration-[0.2s]"
           >
             <AiOutlineInstagram />
             <span>akbar</span>
