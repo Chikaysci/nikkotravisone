@@ -29,6 +29,14 @@ function Gifts() {
               <p className="text-[#d4af37]/70 leading-relaxed font-light text-base md:text-lg max-w-2xl mx-auto">
                 Your presence at our wedding is truly the greatest gift we could ask for, so please don't feel any obligation to give us anything more. However, if you would like to celebrate with a gift, we've created a registry to make it simple and convenient.
               </p>
+              <a
+                href="https://www.amazon.com/wedding/guest-view/154K5URLT2X20"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-8 px-8 py-3 border border-[#d4af37]/50 text-[#d4af37] text-sm tracking-[0.2em] uppercase font-light rounded-lg transition-all duration-300 hover:bg-[#d4af37]/10 hover:border-[#d4af37]"
+              >
+                View Our Registry
+              </a>
             </div>
           </RevealWrapper>
         </div>

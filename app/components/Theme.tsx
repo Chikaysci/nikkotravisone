@@ -7,8 +7,8 @@ function Theme() {
   const colors = [
     { name: "Black", hex: "#1a1a1a", textLight: true },
     { name: "White", hex: "#ffffff", textLight: false },
-    { name: "Beige", hex: "#f5f0e8", textLight: false },
-    { name: "Gold", hex: "#d4af37", textLight: false },
+    { name: "Beige", hex: "#c8b89a", textLight: false },
+    { name: "Gold Accessories", hex: "#d4af37", textLight: false },
   ];
 
   return (
@@ -35,7 +35,7 @@ function Theme() {
           <RevealWrapper duration={1500} origin="bottom">
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden p-8 md:p-12">
               <h3 className="text-[#d4af37]/50 tracking-[0.2em] text-xs uppercase mb-8 text-center">
-                Color Palette
+                Dress shade selected from the color palette
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {colors.map((color) => (
@@ -64,27 +64,27 @@ function Theme() {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-6 mt-10">
-                {/* For Him */}
-                <div className="text-center p-6 border border-white/10 rounded-xl">
-                  <p className="text-[#d4af37]/60 tracking-[0.2em] text-xs uppercase mb-4">
-                    For Him
-                  </p>
-                  <ul className="text-[#d4af37]/70 text-sm space-y-2 font-light">
-                    <li>Suit or Tuxedo</li>
-                    <li>Tie or Bow tie</li>
-                  </ul>
-                </div>
-
-                {/* For Her */}
-                <div className="text-center p-6 border border-white/10 rounded-xl">
-                  <p className="text-[#d4af37]/60 tracking-[0.2em] text-xs uppercase mb-4">
-                    For Her
-                  </p>
-                  <ul className="text-[#d4af37]/70 text-sm space-y-2 font-light">
-                    <li>Feel free to wear white</li>
-                    <li>Elegant accessories</li>
-                  </ul>
+              <div className="grid md:grid-cols-2 gap-6 mt-10">
+                {/* For Him & For Her combined */}
+                <div className="p-6 border border-white/10 rounded-xl">
+                  <div className="mb-6">
+                    <p className="text-[#d4af37]/60 tracking-[0.2em] text-xs uppercase mb-3">
+                      For Him
+                    </p>
+                    <ul className="text-[#d4af37]/70 text-sm space-y-2 font-light">
+                      <li>Suit or Tuxedo</li>
+                      <li>Tie or Bow tie</li>
+                    </ul>
+                  </div>
+                  <div className="border-t border-white/10 pt-6">
+                    <p className="text-[#d4af37]/60 tracking-[0.2em] text-xs uppercase mb-3">
+                      For Her
+                    </p>
+                    <ul className="text-[#d4af37]/70 text-sm space-y-2 font-light">
+                      <li>Feel free to wear white</li>
+                      <li>Elegant accessories</li>
+                    </ul>
+                  </div>
                 </div>
 
                 {/* Note */}
@@ -93,8 +93,8 @@ function Theme() {
                     Note
                   </p>
                   <ul className="text-[#d4af37]/70 text-sm space-y-3 font-light">
-                    <li>👟 Wear comfortable dress shoes for the garden wedding ceremony</li>
-                    <li>🎉 Feel free to wear semi-formal clothing to the reception</li>
+                    <li>👞👡 Wear comfortable dress shoes for the garden wedding ceremony</li>
+                    <li>🍷🎩 Feel free to wear semi-formal clothing to the reception</li>
                   </ul>
                 </div>
               </div>
@@ -120,11 +120,11 @@ function Theme() {
                   <p className="text-[#d4af37]/60 text-xs tracking-widest uppercase">Resilience</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#f5f0e8] to-[#ffffff] mx-auto mb-3 opacity-80 border border-white/20"></div>
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#c8b89a] to-[#d4c5a9] mx-auto mb-3 opacity-80 border border-white/20"></div>
                   <p className="text-[#d4af37]/60 text-xs tracking-widest uppercase">Stability</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#ffffff] to-[#f5f0e8] mx-auto mb-3 opacity-80 border border-white/20"></div>
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#ffffff] to-[#c8b89a] mx-auto mb-3 opacity-80 border border-white/20"></div>
                   <p className="text-[#d4af37]/60 text-xs tracking-widest uppercase">Joy</p>
                 </div>
               </div>

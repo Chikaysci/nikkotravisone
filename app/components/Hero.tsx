@@ -73,6 +73,9 @@ function Hero({
             <p className="text-xs sm:text-sm tracking-[0.3em] font-bold opacity-80">
               OCTOBER 02, 2026
             </p>
+            <p className="text-xs sm:text-sm tracking-[0.3em] font-bold opacity-80 mt-1">
+              Honolulu, Hawaii
+            </p>
           </div>
         </div>
       </div>
