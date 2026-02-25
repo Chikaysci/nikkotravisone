@@ -84,7 +84,7 @@ function Ceremony() {
                         Nalo Garden
                       </p>
                       <p className="text-[#d4af37]/50 text-sm mt-1">
-                        Waimanalo, Oahu, HI
+                        41-847 Waikupanaha St, Waimanalo, Hawaii, 96795
                       </p>
                     </div>
                   </div>
@@ -93,7 +93,7 @@ function Ceremony() {
                 {/* Map Button */}
                 <div className="mt-8 text-center">
                   <a
-                    href="https://www.google.com/maps/search/Nalo+Garden+Waimanalo+Oahu+HI"
+                    href="https://www.google.com/maps/search/41-847+Waikupanaha+St,+Waimanalo,+Hawaii,+96795"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-3 border border-white/30 rounded-full text-[#d4af37]/80 text-sm tracking-wider uppercase hover:bg-white/10 transition-all duration-300"
