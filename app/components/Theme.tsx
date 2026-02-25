@@ -81,7 +81,7 @@ function Theme() {
                       For Her
                     </p>
                     <ul className="text-[#d4af37]/70 text-sm space-y-2 font-light">
-                      <li>Feel free to wear white</li>
+                      <li>Dress shade selected from the color palette</li>
                       <li>Elegant accessories</li>
                     </ul>
                   </div>
