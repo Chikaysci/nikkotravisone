@@ -35,7 +35,7 @@ function Theme() {
           <RevealWrapper duration={1500} origin="bottom">
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden p-8 md:p-12">
               <h3 className="text-[#d4af37]/50 tracking-[0.2em] text-xs uppercase mb-8 text-center">
-                Dress shade selected from the color palette
+                Color palette
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {colors.map((color) => (
