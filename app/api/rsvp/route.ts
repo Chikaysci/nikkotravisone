@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
   try {
     await resend.emails.send({
       from: "RSVP <onboarding@resend.dev>",
-      to: "nikko_abellar@yahoo.com",
+      to: "Nikko_abellar@yahoo.com",
       subject: `RSVP from ${name} — Nikko & Travis Wedding`,
       html: `
         <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; padding: 32px; background: #1a1a1a; color: #d4af37;">
