@@ -64,7 +64,7 @@ function Ceremony() {
                       <h3 className="text-[#d4af37] font-light tracking-wider mb-2">
                         TIME
                       </h3>
-                      <p className="text-[#d4af37]/70 text-lg">2:30 PM</p>
+                      <p className="text-[#d4af37]/70 text-lg">11:00 AM</p>
                       <p className="text-[#d4af37]/50 text-sm mt-1">
                         Please arrive 30 minutes early
                       </p>
